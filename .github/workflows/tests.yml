@@ -34,7 +34,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: redis
+          extensions: redis, apc, apcu
+          tools: pecl
           coverage: none
 
       - name: Install dependencies

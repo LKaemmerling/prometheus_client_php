@@ -18,7 +18,7 @@ class BlackBoxTest extends TestCase
      */
     private $adapter;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->adapter = getenv('ADAPTER');
         $this->client = new Client(['base_uri' => 'http://nginx:80/']);
@@ -35,7 +35,6 @@ class BlackBoxTest extends TestCase
             $this->client->getAsync('/examples/some_gauge.php?c=0&adapter=' . $this->adapter),
             $this->client->getAsync('/examples/some_gauge.php?c=1&adapter=' . $this->adapter),
             $this->client->getAsync('/examples/some_gauge.php?c=2&adapter=' . $this->adapter),
-
         ];
 
         Promise\settle($promises)->wait();
