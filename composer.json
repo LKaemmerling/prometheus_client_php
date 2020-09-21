@@ -25,7 +25,8 @@
     },
     "suggest": {
         "ext-redis": "Required if using Redis.",
-        "ext-apc": "Required if using APCu."
+        "ext-apc": "Required if using APCu.",
+        "lkaemmerling/prometheus_push_gateway_php": "Required if using APCu."
     },
     "autoload": {
         "psr-4": {
