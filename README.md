@@ -2,6 +2,10 @@
 
 ![Tests](https://github.com/lkaemmerling/prometheus_client_php/workflows/Tests/badge.svg)
 
+***
+**The repository was moved to https://github.com/PromPHP/prometheus_client_php, the further development will take place there.**
+***
+
 This library uses Redis or APCu to do the client side aggregation.
 If using Redis, we recommend running a local Redis instance next to your PHP workers.
 
